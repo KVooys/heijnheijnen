@@ -1,0 +1,66 @@
+body {
+  background-image: url("../images/Sakura-background.jpg");
+  background-size: cover;
+  padding: 3em;
+  font-family: sans-serif
+}
+
+/* add a small hover-over effect to the headers and links */
+/* old h color:   color: #2c8898; */
+
+h2, h3, a {
+  color: #2760AD;
+  -webkit-transition: all .5s ease-in-out;
+      transition: all .5s ease-in-out;
+}
+
+h3 {
+  color:#35A55D;
+}
+
+h2:hover, h3:hover, a:hover {
+  color: #671D79;
+}
+
+/* make images appear to the left of the textarea and fit within the element*/
+
+.images {
+  float: left;
+  height: 300px;
+  margin-right: 5px;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border: 1px solid #4a4a4a;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.title {
+  grid-row: 1;
+  grid-column: 1 / 6;
+}
+
+.menu {
+  grid-row: 1;
+  grid-column:  7 / 13;
+  text-align: right;
+}
+
+.books {
+  grid-row: 2;
+  grid-column: span 12;
+}
+
+.about {
+  grid-row: 3;
+  grid-column: span 12;
+}
+
+.footer {
+  grid-row: 4;
+  grid-column: span 12;
+}
