@@ -1,5 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
+
 <head>
   <title> Homepage van de auteur Heijn Heijnen</title>
   <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
@@ -7,102 +8,144 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="google-site-verification" content="RQwhZktWTnmSQcbVE9Ucfi7IFFUSf57Om0sY0xlW8HQ" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel ="stylesheet" href ="css/normalize.css">
-  <link rel ="stylesheet" href ="css/sakura.css">
-  <link rel ="stylesheet" href ="css/jquery.fancybox.min.css">
-  <link rel ="stylesheet" href ="css/style.css">
-  <script type ="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type ="text/javascript" src ="js\jquery.fancybox.min.js"></script>
-  <script type ="text/javascript" src ="js/index.js"></script>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/sakura.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js\jquery.fancybox.min.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
 </head>
 
 <body>
-  <div class ="wrapper">
-    <div class ="title">
-      <h2>Heijn Heijnen</h2>
-    </div>
-    <div class = "menu">
-      <a href="#books" id ="booksbutton"><i class="material-icons">library_books</i> Boeken</a>
-      <a href="#about" id ="aboutbutton"><i class="material-icons">info</i> Auteur</a>
-      <a href="#contact" id ="contactbutton"><i class="material-icons">contact_mail</i> Contact</a>
-    </div>
-
-  <div class ="books" id ="books">
-
-    <h3>Toverdrankjes voor geluk</h3>
-
-    <div>
-        <a href="images\Toverdranken1-1.jpg" data-fancybox="gallery" data-caption="Toverdrankjes voor geluk" >
-        <img class = "images" src="images\Toverdranken1-1.jpg">
-        </a>
+  <div class="flex-container">
+    <div class="navbar">
+      <div class="title">
+        <h2>Heijn Heijnen</h2>
+      </div>
+      <div class="menu">
+        <a href="#books" id="booksbutton"><i class="material-icons">library_books</i> Boeken </a>
+        <a href="#about" id="aboutbutton"><i class="material-icons">info</i> Auteur </a>
+        <a href="#contact" id="contactbutton"><i class="material-icons">contact_mail</i> Contact </a>
+      </div>
     </div>
 
-    <p>
-      De bundel Toverdrankjes voor Geluk bevat 20 duetten, een
-  samenspel van Heijn Heijnen en Merik van der Torren. Elk duet
-  bestaat uit een verhaal gevolgd door een passend gedicht.
-  De sfeer is meestal opgewekt-weemoedig. In de meeste verhalen
-  speelt de troost door muziek een rol. Volgens de filosoof Plato
-  dringt niets zo diep door in het binnenste van de ziel als ritme
-  en melodie. Hier en daar blinken vonkjes van
-  tegendraadse humor, waarmee de schrijvers ons
-  bijlichten op zoek naar identiteit en geluk.
-    </p>
+    <div class="booknav">
 
-    <a href = "https://www.bol.com/nl/p/toverdrankjes-voor-geluk/9200000081928113/">Toverdrankjes voor geluk op bol.com <i class="material-icons">library_add</i></a>
+      <h3>Toverdrankjes voor geluk</h3>
 
-    <br style="clear:both"/>
+      <div class="books">
+        <div class="image_div">
+          <a class="image" href="images\Toverdranken1-1.jpg" data-fancybox="gallery"
+            data-caption="Toverdrankjes voor geluk">
+            <img src="images\Toverdranken1-1.jpg">
+          </a>
+        </div>
 
-    <h3>Rokade</h3>
+        <p class="content">
+          De bundel Toverdrankjes voor Geluk bevat 20 duetten, een
+          samenspel van Heijn Heijnen en Merik van der Torren. Elk duet
+          bestaat uit een verhaal gevolgd door een passend gedicht.
+          De sfeer is meestal opgewekt-weemoedig. In de meeste verhalen
+          speelt de troost door muziek een rol. Volgens de filosoof Plato
+          dringt niets zo diep door in het binnenste van de ziel als ritme
+          en melodie. Hier en daar blinken vonkjes van
+          tegendraadse humor, waarmee de schrijvers ons
+          bijlichten op zoek naar identiteit en geluk.
+          <br />
+          <a href="https://www.bol.com/nl/p/toverdrankjes-voor-geluk/9200000081928113/">Toverdrankjes voor
+            geluk op
+            bol.com <i class="material-icons">library_add</i></a>
+        </p>
+      </div>
 
-    <div>
-      <a href="images\Rokade.jpg" data-fancybox="gallery" data-caption="Rokade">
-      <img class = "images" src="images\Rokade.jpg">
-      </a>
+      <div lang="nl" id="rokkade">
+        <h3>Rokade - een schaakroman</h3>
+        <button id="language_toggle" onclick="switch_lang()">Deutsch</button>
+        <br>
+        <br>
+        <div class="books">
+
+          <div class="image_div">
+            <a class="image" href="images\Rokade.jpg" data-fancybox="gallery" data-caption="Rokade">
+              <img src="images\Rokade.jpg">
+            </a>
+          </div>
+
+          <p class="content">
+            Hoofdpersoon is de apotheker Ewoud van E. Tot zijn ontzetting ontdekt hij een complot om hem uit zijn
+            winkeltje te werken.
+            Hij voelt zich bedreigd. Natuurlijk stuurt zijn huisarts, Lode Priester hem naar de psychiater.
+            Maar bij deze specialist, dr. Helleman, durft hij niet over zijn ontdekkingen te spreken - uit angst om gek
+            te worden verklaard.
+            Hij vertelt hem onder meer over de voordelen van het vega-leven en de charme van het schaken in een club.
+            <br>
+            <br>
+            Voor het eerst gaat hij een dagboek bijhouden.
+            Daarin beschrijft hij de samenzwering wél. Hij voelt zich de belaagde koning in een schaakpartij tegen een
+            Meesterschaker.
+            Voorlopig kan hij zich nog troosten met zijn vrouw Mousa, hun dochtertje en zijn vioolspel. Maar de spanning
+            in zijn leven loopt ondraaglijk op. Hoe moet dit aflopen?
+            Deze – hier en daar hilarische – roman is als een schaakspel opgebouwd. De Duitse vertaling is een door de
+            auteur ingekorte versie van het origineel.
+            <br />
+            <a href="https://www.bol.com/nl/p/rokade/9200000010442164/">Rokade op bol.com <i
+                class="material-icons">library_add</i></a>
+          </p>
+        </div>
+      </div>
+
+      <div lang="de" id="rochade">
+        <h3>Rochade - ein Schachroman</h3>
+        <button id="language_toggle" onclick="switch_lang()">Nederlands</button>
+        <br>
+        <br>
+        <div class="books">
+
+          <div class="image_div">
+            <a class="image" href="images\Rochade.png" data-fancybox="gallery" data-caption="Rochade">
+              <img src="images\Rochade.png">
+            </a>
+          </div>
+
+          <p class="content">
+            Die Hauptperson, der Apotheker Ewoud van E, entdeckt zu seinem Entsetzen einen gegen ihn geschmiedeten
+            Komplott: Man versucht, ihn aus seinem Geschäft zu vertreiben.
+            Er fühlt sich bedroht. Natürlich überweist sein Hausarzt, Lode Priester, ihn an einen Psychiater.
+            Bei diesem Spezialisten traut sich der Apotheker aber nicht, über seine Entdeckung zu sprechen.
+            Allzu groß ist die Angst, für verrückt erklärt zu werden. Er spricht aber mit ihm über die Vorzüge einer
+            veganen Lebensweise und über den Reiz der Mitgliedschaft in einem Schachklub.
+            <br>
+            <br>
+            Zum ersten Mal in seinem Leben führt er ein Tagebuch, in dem er die Verschwörung sehr wohl thematisiert. Er
+            sieht sich als den bedrohten König in einem Spiel gegen einen Schachmeister. Vorerst findet er noch Trost
+            bei seiner Frau Mousa, der kleinen Tochter und dem Geigenspiel. Die Spannung in seinem Leben steigert sich
+            aber bis zum Unerträglichen. Wie soll das ausgehen?
+            Dieser stellenweise komische Roman ist wie ein Schachspiel konstruiert. Die deutsche Übersetzung ist eine
+            vom Autor gekürzte Fassung des niederländischen Originals.
+            <br>
+            <br>
+            Link zur Übersetzung folgt in Kürze.
+          </p>
+        </div>
+      </div>
+
     </div>
 
-    <p>
-      De schaakroman Rokade vertelt het verhaal van de apotheker
-      Ewoud van E. Als lid van de 'Vereniging Tegen de Kwakzalverij'
-      heeft hij een afschuw van homeopathie. Niet lang nadat hij zich
-      gevestigd heeft, meent hij een complot van huisartsen te
-      ontdekken, dat hem uit zijn winkel wil werken. Via zijn huisarts
-      die een klassieke homeopaat is, belandt hij bij de psychiater,
-      dr. Helleman.
-    </p>
-    <p>
-      Maar de overgevoelige Ewoud vertelt deze specialist niets over
-      een complot, uit angst om voor gek te worden verklaard.
-      In plaats daarvan vertelt hij over het schaken in een club en de
-      voordelen van het vegetarisme. Wel beschrijft hij de samenzwering
-      nauwkeurig in een dagboek dat hij gaat bijhouden.
-      Hij waant zich het middelpunt van een denkbeeldig
-      schaakspel dat door een briljante geest tegen hem
-      wordt gespeeld. Er ontstaat een steeds grotere spanning
-      tussen wat Ewoud de psychiater vertelt en anderzijds de
-      dreigende gebeurtenissen in zijn leven.
-    </p>
+    <div class="about">
+      <h3>Over de auteur</h3>
+      Van jongs af aan ontmoette Heijn Heijnen zonderlinge
+      figuren in wie hij zich herkende. Liefdevol schetst hij
+      ze in zijn flitsverhalen. Hij speelt iedere dag piano, ook in
+      een trio dat de blues en songs uit The American Songbook
+      brengt.In 2014 verscheen zijn schaakroman Rokade.
+      Momenteel werkt Heijn Heijnen aan een bundel korte verhalen.
+    </div>
 
-    <a href = "https://www.bol.com/nl/p/rokade/9200000010442164/">Rokade op bol.com <i class="material-icons">library_add</i></a>
-
-    <br style="clear:both"/>
+    <div class="contact">
+      <h3>Contact</h3>
+      E-mail: <a href="mailto:hein.vanderkroon@gmail.com">hein.vanderkroon@gmail.com</a>
+    </div>
 
   </div>
-
-  <div class = "about" id = "about">
-    <h3>Over de auteur</h3>
-    Van jongs af aan ontmoette Heijn Heijnen zonderlinge
-figuren in wie hij zich herkende. Liefdevol schetst hij
-ze in zijn flitsverhalen. Hij speelt iedere dag piano, ook in
-een trio dat de blues en songs uit The American Songbook
-brengt.In 2014 verscheen zijn schaakroman Rokade.
-Een Duitse vertaling komt medio 2018 uit.
-  </div>
-
-  <div class ="footer" id ="contact">
-    <h3>Contact</h3>
-    E-mail: <a href="mailto:hein.vanderkroon@gmail.com">hein.vanderkroon@gmail.com</a>
-  </div>
-
-</div>
 </body>

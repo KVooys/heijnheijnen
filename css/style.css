@@ -1,7 +1,7 @@
 body {
   background-image: url("../images/Sakura-background.jpg");
   background-size: cover;
-  padding: 3em;
+  /* padding: 3em; */
   font-family: sans-serif
 }
 
@@ -22,45 +22,42 @@ h2:hover, h3:hover, a:hover {
   color: #671D79;
 }
 
-/* make images appear to the left of the textarea and fit within the element*/
-
-.images {
-  float: left;
-  height: 300px;
-  margin-right: 5px;
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
-  border: 1px solid #4a4a4a;
+.flex-container {
+  display: flex;
+  flex-direction: column;
 }
 
-.wrapper {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-}
+.navbar {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
 
-.title {
-  grid-row: 1;
-  grid-column: 1 / 6;
 }
 
 .menu {
-  grid-row: 1;
-  grid-column:  7 / 13;
-  text-align: right;
+  justify-content: space-evenly;
 }
 
 .books {
-  grid-row: 2;
-  grid-column: span 12;
+  display: flex;
 }
 
-.about {
-  grid-row: 3;
-  grid-column: span 12;
+.image_div {
+  display: flex;
+  flex: 35%;
 }
 
-.footer {
-  grid-row: 4;
-  grid-column: span 12;
+.content {
+  flex: 65%;
+  margin: 0;
+}
+
+.image {
+  margin-right: 3rem;
+  object-fit: contain;
+  /*  */
+}
+
+img {
+  border: 1px solid #4a4a4a;
 }
